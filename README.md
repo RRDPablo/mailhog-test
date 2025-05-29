@@ -12,6 +12,7 @@ Este proyecto muestra cómo enviar correos HTML con Python usando `smtplib` y ve
 ### 1. Clona el repositorio
 git clone  https://github.com/RRDPablo/mailhog-test.git
 cd mailhog-test
+
 2. Inicia MailHog con Docker
 Abre una terminal en la ruta del proyecto y ejecuta
 docker run -d -p 1025:1025 -p 8025:8025 mailhog/mailhog
@@ -21,6 +22,7 @@ Accede a la interfaz web en: http://localhost:8025
 
 3. Ejecuta el script de envío en el terminal
 python send_email.py
+
 4. Verifica el correo
 Abre tu navegador y visita http://localhost:8025
 
