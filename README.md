@@ -32,3 +32,6 @@ send_email.py: Script principal que envía el correo.
 email_templates.py: Plantilla HTML para el correo, personalizada con estilo de KFC.
 
 📸 Vista previa
+![image](https://github.com/user-attachments/assets/2f1d4ab4-4edd-47c7-9f5d-25bfedeb5343)
+![image](https://github.com/user-attachments/assets/3e5637d4-efea-4ae8-a4a7-ced3a46d3980)
+
