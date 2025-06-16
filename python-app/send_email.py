@@ -7,8 +7,8 @@ import os
 # Datos del cliente y del pedido
 nombre_cliente = "Carlos"
 producto = "Big Box Recargado"
-cantidad = 2
-precio_total = round(7.50 * cantidad, 2)
+cantidad = 3
+precio_total = round(7.50 * cantidad, 3)
 
 # Configuración del correo
 from_address = "noreply@example.com"
