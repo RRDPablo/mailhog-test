@@ -4,4 +4,5 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-CMD ["python", "send_email.py"]
+CMD ["tail", "-f", "/dev/null"]
+
