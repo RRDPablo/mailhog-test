@@ -1,2 +1,6 @@
 Jinja2
+qrcode
+pdfkit
+Pillow
+
 

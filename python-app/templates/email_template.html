@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Confirmación de Pedido</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; color: #333; background: #f7f7f7;">
+  <div style="max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <div style="text-align: center;">
+    <img src="https://1000marcas.net/wp-content/uploads/2020/01/KFC-logo.png" alt="Logo KFC" width="150" style="margin-bottom: 20px;" />
+      <h2 style="color: #e4002b;">🍗 ¡Gracias por tu pedido, {{ datos.nombre_cliente }}! 🍗</h2>
+    </div>
+
+    <p>🧾 Hemos recibido tu pedido en <strong>{{ datos.local_nombre }}</strong> con número <strong>{{ datos.numero_pedido }}</strong>.</p>
+
+    <h3>🛍️ Detalles del pedido:</h3>
+    <ul>
+      {% for producto in datos.productos %}
+      <li>🔸 {{ producto.cantidad }} x {{ producto.nombre }} – <strong>${{ '%.2f' % producto.subtotal }}</strong></li>
+      {% endfor %}
+    </ul>
+
+    <p><strong>Total pagado: 💵 ${{ '%.2f' % datos.total }}</strong></p>
+
+    <h3>📍 Datos del local:</h3>
+    <p><strong>Dirección:</strong> {{ datos.direccion_local }}<br>
+    <strong>Teléfono:</strong> {{ datos.telefono_local }}<br>
+    <strong>RUC:</strong> {{ datos.ruc_local }}</p>
+
+    <h3>👤 Datos del cliente:</h3>
+    <p><strong>Nombre:</strong> {{ datos.nombre_cliente }}<br>
+    <strong>Correo:</strong> {{ datos.correo_cliente }}<br>
+    <strong>Dirección:</strong> {{ datos.direccion_cliente }}</p>
+
+    <p style="text-align: center; margin-top: 30px;">📎 Adjuntamos tu factura en PDF con el detalle completo del pedido y un código QR.</p>
+
+    <p style="text-align: center; font-size: 14px; color: #888;">Gracias por elegirnos. ¡Buen provecho! 😋</p>
+  </div>
+</body>
+</html>
